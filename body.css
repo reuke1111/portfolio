@@ -1,0 +1,74 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #8A8DE1; /* your purple background */
+  color: #FF9B52;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw;
+  box-sizing: border-box;
+}
+
+/* Text Block */
+.text-block {
+  flex: 1;
+  max-width: 40%;
+}
+
+.text-block h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.2;
+}
+
+.text-block span {
+  font-weight: bold;
+}
+
+.text-block p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #FF9B52;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Spline Box */
+.photo-box {
+  flex: 1;
+  max-width: 50%;
+  aspect-ratio: 4/3;
+  border: 2px solid #6D73C2;
+  overflow: hidden;
+  transition: all 0.5s ease; /* smooth transition */
+}
+
+.photo-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform 0.5s ease; /* optional zoom effect */
+}
+
+.photo-box:hover iframe {
+  transform: scale(1.02); /* slight zoom on hover */
+}
